@@ -1,0 +1,1 @@
+(()=>{var o={880:o=>{o.exports={formatTime:o=>o+"s"}}},r={};function e(t){var s=r[t];if(void 0!==s)return s.exports;var n=r[t]={exports:{}};return o[t](n,n.exports,e),n.exports}(()=>{"use strict";const{formatTime:o}=e(880);console.log(3),console.log(1),console.log(o("123"))})()})();
