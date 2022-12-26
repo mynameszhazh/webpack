@@ -1,0 +1,51 @@
+{
+  "id": "2370869",
+  "name": "tabbar",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4766886",
+      "name": "car",
+      "font_class": "car",
+      "unicode": "e7d7",
+      "unicode_decimal": 59351
+    },
+    {
+      "icon_id": "9453185",
+      "name": "分类",
+      "font_class": "fenlei",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "10268929",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "13332448",
+      "name": "购物车",
+      "font_class": "gouwuche1",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "14060278",
+      "name": "我的",
+      "font_class": "wode1",
+      "unicode": "e7d2",
+      "unicode_decimal": 59346
+    },
+    {
+      "icon_id": "17817835",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    }
+  ]
+}
