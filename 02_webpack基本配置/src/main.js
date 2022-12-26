@@ -1,5 +1,6 @@
-import "../css/index.css";
-import "../css/componse.less";
+import "./css/index.css";
+import "./css/test.css";
+import "./css/componse.less";
 
 function generatorElement() {
   const div = document.createElement("div");

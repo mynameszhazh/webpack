@@ -9,19 +9,44 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: [{ loader: "style-loader" }, { loader: "css-loader" }],
+        test: /\.css$/,
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 1
+            }
+          },
+          "postcss-loader",
+        ],
         // loader: 'css-loader'
       },
       {
         test: /\.less$/i,
         use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" },
-          { loader: "less-loader" },
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 2
+            }
+          },
+          "postcss-loader",
+          {
+            loader: "less-loader",
+          },
         ],
         // loader: 'css-loader'
       },
+      {
+        test: /\.(png|jpe?g|svg)$/,
+        use: ['file-loader']
+      }
     ],
   },
 };
