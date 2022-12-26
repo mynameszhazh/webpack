@@ -5,6 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "build.js",
+    // assetModuleFilename: "img/[name].[hash:6].[ext]",
   },
   module: {
     rules: [
@@ -17,8 +18,8 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              importLoaders: 1
-            }
+              importLoaders: 1,
+            },
           },
           "postcss-loader",
         ],
@@ -33,8 +34,8 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              importLoaders: 2
-            }
+              importLoaders: 2,
+            },
           },
           "postcss-loader",
           {
@@ -45,16 +46,25 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|svg|webp)$/,
-        use: [{
-          // loader: 'file-loader',
-          loader: 'url-loader',
-          options: {
-            name: 'img/[name].[hash:6].[ext]',
-            limit: 5 * 1024,
-            esModule: false,
-          }
-        }]
-      }
+        use: [
+          {
+            // loader: 'file-loader',
+            loader: "url-loader",
+            options: {
+              name: "img/[name].[hash:6].[ext]",
+              limit: 5 * 1024,
+              // esModule: false,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(ttf|woff2?)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "font/[name].[hash:6][ext]",
+        },
+      },
     ],
   },
 };
