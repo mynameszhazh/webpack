@@ -1,3 +1,11 @@
 .content {
   color: #12345678;
 }
+
+.bg-img {
+  /* display: inline-block; */
+  width: 200px;
+  height: 200px;
+  background-image: url('../img/flower.webp');
+  background-size: cover;
+}

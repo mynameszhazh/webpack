@@ -44,8 +44,16 @@ module.exports = {
         // loader: 'css-loader'
       },
       {
-        test: /\.(png|jpe?g|svg)$/,
-        use: ['file-loader']
+        test: /\.(png|jpe?g|svg|webp)$/,
+        use: [{
+          // loader: 'file-loader',
+          loader: 'url-loader',
+          options: {
+            name: 'img/[name].[hash:6].[ext]',
+            limit: 5 * 1024,
+            esModule: false,
+          }
+        }]
       }
     ],
   },
