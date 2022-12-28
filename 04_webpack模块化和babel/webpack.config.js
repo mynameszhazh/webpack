@@ -2,11 +2,11 @@ const path = require("path");
 
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { DefinePlugin } = require("webpack");
 
 module.exports = {
   mode: "development",
+  devtool: "cheap-module-source-map",
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "build.js",
@@ -14,6 +14,17 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"],
+            },
+          },
+        ],
+      },
       {
         test: /\.css$/,
         use: [
