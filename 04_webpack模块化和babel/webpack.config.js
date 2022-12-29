@@ -6,7 +6,7 @@ const { DefinePlugin } = require("webpack");
 
 module.exports = {
   mode: "development",
-  devtool: "cheap-module-source-map",
+  devtool: "source-map",
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "build.js",
@@ -15,13 +15,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
+        // 排除一些文件的处理
         use: [
           {
             loader: "babel-loader",
             options: {
-              presets: ["@babel/preset-env"],
-            },
+              exclude: /node_modules/
+            }
           },
         ],
       },
