@@ -4,6 +4,7 @@ const formatTime2 = require("./utils/format.ts");
 function tet(nihao: string) {
   return '123' + nihao
 }
+const arr = '1232';
 
 console.log(sum(1, 2));
 console.log(reduce('2', 1));
