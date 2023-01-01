@@ -2,14 +2,18 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const prodConfig = require("./webpack.prod.js");
 const devConfig = require("./webpack.dev.js");
-const { merge } = require('webpack-merge');
+const { merge } = require("webpack-merge");
 
 const commonWebpckConfig = {
   // context: path.resolve(__dirname, "./"),
   // 这个获取路径 都是根据一个 context 的属性进行相关的资源获取的
-  entry: "./src/index.js",
+  entry: {
+    index: { import: "./src/index.js", dependOn: "shared" },
+    main: { import: "./src/main.js", dependOn: "shared" },
+    shared: ["lodash"],
+  },
   output: {
-    filename: "bounder.js",
+    filename: "[name].bounder.js",
     path: path.resolve(__dirname, "../dist"),
   },
   resolve: {
