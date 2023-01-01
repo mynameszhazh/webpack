@@ -1,0 +1,23 @@
+{
+  "name": "07_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./config/webpack.common.js --env production",
+    "serve": "webpack serve --config ./config/webpack.common.js --env development"
+  },
+  "author": "",
+  "devDependencies": {
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-middleware": "^5.3.3",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
