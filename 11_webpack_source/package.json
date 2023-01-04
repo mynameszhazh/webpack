@@ -1,0 +1,15 @@
+{
+  "name": "11_webpack_source",
+  "version": "1.0.0",
+  "description": "## webpack 的启动流程",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}
