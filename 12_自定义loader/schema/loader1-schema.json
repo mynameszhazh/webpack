@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "请输入正确的格式",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
