@@ -1,0 +1,1 @@
+{"version":3,"file":"boundler.js","mappings":";;;;;;AAAa;;AAEb;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,MAAM,C","sources":["webpack://customser_loader/./src/main.js"],"sourcesContent":["\"use strict\";\n\nfunction sum(arr) {\n  return arr;\n}\nvar add = function add() {\n  return 12313;\n};\nconsole.log(sum);\nsum(\"123\");\nadd();3"],"names":[],"sourceRoot":""}

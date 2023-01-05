@@ -2,5 +2,10 @@ function sum(arr) {
   return arr;
 }
 
-console.log(sum)
+const add = () => {
+  return 12313;
+};
+
+console.log(sum);
 sum("123");
+add();
