@@ -5,7 +5,7 @@ const AutoUploadPlugin = require("./plugins/AutoUploadPlugin.js");
 module.exports = {
   mode: "development",
   devtool: "source-map",
-  entry: "./src/main.js",
+  entry: "./src/index.js",
   output: {
     filename: "boundler.js",
     path: path.resolve(__dirname, "./dist"),
