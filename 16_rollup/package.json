@@ -1,0 +1,25 @@
+{
+  "name": "16_rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^19.0.2",
+    "loadsh": "^0.0.4",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^14.0.1",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.21",
+    "rollup": "^2.77.3",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
